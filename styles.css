@@ -1,0 +1,61 @@
+:root{
+  --orange:#ff6b00;
+  --muted:#7a7a7a;
+  --pale:#f4f5f7;
+  --border:#e0e0e0;
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+*{box-sizing:border-box}
+body{ margin:0; background:#fff; color:#111; }
+
+/* top banner */
+.top-banner{ background:#000; color:#fff; display:flex; align-items:center; justify-content:space-between; padding:12px 18px; }
+.banner-left{ display:flex; align-items:center; gap:12px; }
+.brand-icon{ width:36px; height:36px; object-fit:cover; border-radius:8px; }
+.banner-text{ font-size:14px; line-height:1; }
+.open-app{ background:var(--orange); color:#fff; border:none; padding:8px 18px; border-radius:24px; font-weight:700; cursor:pointer; }
+
+/* hero */
+.hero-area{ background:var(--pale); border-bottom:1px solid #eee; padding:22px 0; }
+.page{ max-width:520px; margin:0 auto; padding:0 20px; }
+.back-arrow{ font-size:22px; margin:6px 0 14px; }
+.hero{ display:flex; align-items:flex-start; justify-content:space-between; gap:12px; }
+.hero-left{ flex:1; }
+.hero-left h1{ margin:0; font-size:30px; font-weight:800; }
+.subtitle{ margin:8px 0 0; color:var(--muted); }
+.hero-img{ width:150px; display:flex; justify-content:center; align-items:flex-start; margin-top:4px; }
+.hero-img img{ width:84px; height:auto; object-fit:contain; }
+
+/* login box */
+.login-box{ background:#fff; padding:20px; max-width:520px; margin:0 auto; }
+.field-label{ font-size:12px; color:var(--muted); margin-bottom:8px; }
+.input-box{ display:flex; align-items:center; gap:12px; margin-top:8px; }
+.country{ display:flex; align-items:center; gap:8px; background:transparent; border:none; padding:6px 0; cursor:pointer; color:#111; }
+.flag-img{ width:22px; height:14px; object-fit:cover; border-radius:2px; }
+.code{ font-weight:700; }
+.dash{ color:#000; margin:0 6px; }
+#phone{ flex:1; border:none; outline:none; font-size:16px; padding:6px 0; }
+.underline{ height:1px; background:var(--border); margin-top:12px; }
+
+/* continue button */
+.continue{
+  width:100%;
+  margin-top:22px;
+  background:var(--orange);
+  color:#fff;
+  border:none;
+  padding:14px;
+  border-radius:4px;
+  font-weight:700;
+  font-size:16px;
+  cursor:pointer;
+}
+
+/* terms text */
+.terms{ margin-top:14px; color:var(--muted); font-size:13px; }
+
+/* responsive tweaks */
+@media (max-width:420px){
+  .hero-img img{ width:70px; }
+  .brand-icon{ width:32px; height:32px; }
+}
